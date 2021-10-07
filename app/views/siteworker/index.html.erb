@@ -1,0 +1,26 @@
+<h1 class="mt-4 text-xl">GET /persons</h1>
+<% if @siteworkers.count > 0 %>
+  <div class="w-full ml-4">
+    <% @siteworkers.each do |siteworker| %>
+      <ul>
+        <li class="mt-4 text-sm font-medium leading-5 text-gray-900 whitespace-no-wrap ">
+          external_identifier: <%= siteworker.person_number %>
+        </li>
+        <li class="text-sm font-medium leading-5 text-gray-900 whitespace-no-wrap ">
+          email: <%= siteworker.person_email %>
+        </li>
+        <li class="text-sm font-medium leading-5 text-gray-900 whitespace-no-wrap ">
+          first_name: <%= siteworker.person_first_name %>
+        </li>
+        <li class="text-sm font-medium leading-5 text-gray-900 whitespace-no-wrap ">
+          last_name: <%= siteworker.person_last_name %>
+        </li>
+        <li class="text-sm font-medium leading-5 text-gray-900 whitespace-no-wrap ">
+          roles: <%= siteworker.person_role %>
+        </li>
+      </ui>
+    <% end %>
+  <% else %>
+    <p> No siteworkers found</p>
+  <% end %>
+</div>

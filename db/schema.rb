@@ -12,18 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2021_10_05_234310) do
 
-  create_table "people", force: :cascade do |t|
-    t.string "person_first_name"
-    t.string "person_middle_name"
-    t.string "person_last_name"
-    t.text "person_role"
-    t.integer "person_number", null: false
-    t.string "person_email"
-    t.string "person_telephone"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "sites", force: :cascade do |t|
     t.integer "site_number"
     t.string "facility_name"
@@ -32,6 +20,19 @@ ActiveRecord::Schema.define(version: 2021_10_05_234310) do
     t.string "site_state_or_county"
     t.string "site_postal_code"
     t.string "site_country"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "siteworkers", force: :cascade do |t|
+    t.string "person_first_name"
+    t.string "person_middle_name"
+    t.string "person_last_name"
+    t.text "person_role"
+    t.string "person_number"
+    t.string "person_email"
+    t.string "person_telephone"
+    t.integer "person_site_number"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
