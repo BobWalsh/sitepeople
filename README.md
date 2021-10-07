@@ -20,5 +20,9 @@
     4. Click the "Import Source.csv" button. The source.csv file (included in this repo) will be read and inputted into the database.
 
     5. Go to Sites and see /sites.
+    
+<img width="1352" alt="screen2" src="https://user-images.githubusercontent.com/5097/136436863-506da44f-c10f-4900-9971-68a13c6db887.png">
 
     6. Go to People and see /people.
+<img width="1351" alt="screen3" src="https://user-images.githubusercontent.com/5097/136436881-c9aae6aa-b04e-4f0f-a1fc-a55735dbae58.png">
+
