@@ -14,4 +14,5 @@
     2. In your browser, go to `localhost:3000`
 
     3. You should see the following screen:
+    
     ![Audrey tanning](https://github.com/BobWalsh/sitepeople/blob/master/app/assets/images/Audrey_tanning_use.jpg)
